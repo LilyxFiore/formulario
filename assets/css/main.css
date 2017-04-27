@@ -1,0 +1,35 @@
+*{
+  font-family: Prompt, sans-serif;
+}
+
+input{
+  display: block;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box span{
+  display: block;
+  background-color: rgba(251, 71, 4, 0.7);
+  padding: 5px;
+  position: absolute;
+  left: 14%;
+  top: 14px;
+  width: auto;
+  color: white;
+  display: none;
+}
+
+.input-box span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid rgba(251, 71, 4, 0.7);
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
