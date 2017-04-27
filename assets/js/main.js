@@ -8,13 +8,14 @@ function validateForm(){
   var name = document.getElementById("input-name");
   var lastName = document.getElementById("input-lastname");
   var dni = document.getElementById("input-dni");
-  var selectBici = document.getElementById('selectBici');
-  var password = document.getElementById("input-password");
+  var fecha = document.getElementById('input-birthdate');
+//  var password = document.getElementById("input-password");
 
   validateName(name);
   validateLastName(lastName);
   validateDni(dni);
-  validatePassword(password);
+//  validatePassword(password);
+
   validateSelect(selectBici);
 
   return alert("sd");
