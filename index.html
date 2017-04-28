@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Formulario</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
 </head>
 <body>
   <section class="content-form">
-    <form>
+    <form  class="form">
       <div class="input-box">
         Nombres:
         <input type="text" id="input-name" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" required></input>
@@ -25,17 +25,24 @@
       </div>
       <div class="input-box">
         Fecha de nacimiento:
-        <input type="text" id="input-birthdate" placeholder="dd-mm-aaaa" pattern="([\d]{2}[-]){2}[\d]{4}" title="dd-mm-aaaa" required></input>
+        <input type="date" id="input-birthdate" min="1999-04-28" title="Debe ser mayor de edad" required></input>
       </div>
       <div class="input-box">
         Contraseña:
         <input type="text" id="input-password" required></input>
-        <span></span>
       </div>
       <div class="input-box">
         Confirmar contraseña:
         <input type="text" id="input-repassword" required></input>
         <span></span>
+      </div>
+      <div class="input-box">
+        Comentario:
+        <input type="text" id="input-comment" required></input>
+      </div>
+      <div class="input-box">
+        <input type="checkbox" id="input-terminos" required></input>
+        Términos y condiciones
       </div>
       <button type="submit">ENVIAR</button>
     </form>
