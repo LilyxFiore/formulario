@@ -10,33 +10,38 @@
 </head>
 <body>
   <section class="content-form">
-    <form action="">
+    <form>
       <div class="input-box">
-        <label for="name">Nombres</label>
-        <input type="text" id="input-name"></input>
+        Nombres:
+        <input type="text" id="input-name" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" required></input>
+      </div>
+      <div class="input-box">
+        Apellidos:
+        <input type="text" id="input-lastname" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" required></input>
+      </div>
+      <div class="input-box">
+        DNI:
+        <input type="text" id="input-dni" pattern="[0-9]{8}" title="El DNI deb tener 8 números" required></input>
+      </div>
+      <div class="input-box">
+        Fecha de nacimiento:
+        <input type="text" id="input-birthdate" placeholder="dd-mm-aaaa" pattern="([\d]{2}[-]){2}[\d]{4}" title="dd-mm-aaaa" required></input>
+      </div>
+      <div class="input-box">
+        Contraseña:
+        <input type="text" id="input-password" required></input>
         <span></span>
       </div>
       <div class="input-box">
-        <label for="lastname">Apellidos</label>
-        <input type="text" id="input-lastname"></input>
+        Confirmar contraseña:
+        <input type="text" id="input-repassword" required></input>
         <span></span>
       </div>
-      <div class="input-box">
-        <label for="dni">DNI</label>
-        <input type="text" id="input-dni"></input>
-        <span></span>
-      </div>
-      <div class="input-box">
-        <label for="birthdate">Fecha de nacimiento</label>
-        <input type="text" id="input-birthdate" placeholder="Fortamto de fecha: dd-mm-aa"></input>
-        <span></span>
-      </div>
-
-
-
-      <button type="submit">Enviar</button>
+      <button type="submit">ENVIAR</button>
     </form>
+  <script type="text/javascript" src="assets/js/main.js">
+
+  </script>
   </section>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
