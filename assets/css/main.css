@@ -24,21 +24,23 @@ body {
   padding: 20px;
 }
 
-input[type="text"], input[type="date"], input[type="password"] {
+input[type="text"], input[type="date"], input[type="password"]{
   position: absolute;
   right: 10px;
   width: 150px;
 }
 
-#input-comment{
-  position: absolute;
-  width: 150px;
-  height: 80px;
-}
-
 .input-box {
   position: relative;
   margin: 20px 0;
+}
+
+.comment{
+  height: 100px;
+}
+
+#input-comment{
+  height: 100px;
 }
 
 .input-box span{

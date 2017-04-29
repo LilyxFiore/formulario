@@ -13,19 +13,27 @@
     <form  class="form">
       <div class="input-box">
         Nombres:
-        <input type="text" id="input-name" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" required></input>
+        <input type="text" title="El nombre debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" required></input>
       </div>
       <div class="input-box">
         Apellidos:
-        <input type="text" id="input-lastname" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" required></input>
+        <input type="text" title="El apellido debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" required></input>
       </div>
       <div class="input-box">
         DNI:
-        <input type="text" id="input-dni" pattern="[0-9]{8}" title="El DNI deb tener 8 números" required></input>
+        <input type="text" title="El DNI debe tener 8 números" pattern="[0-9]{8}"  required></input>
       </div>
       <div class="input-box">
         Fecha de nacimiento:
-        <input type="date" id="input-birthdate" min="1999-04-28" title="Debe ser mayor de edad" required></input>
+        <input type="date" max="1999-04-28" title="Debe ser mayor de edad" required></input>
+      </div>
+      <div class="input-box">
+        Número de celular:
+        <input type="text" title="El número celular debe empezar con 9" pattern="[9]{1}[0-9]{8}" required></input>
+      </div>
+      <div class="input-box">
+        Número de teléfono fijo:
+        <input type="text" title="El teléfono fijo debe ser 7 números" pattern="[0-9]{7}" required></input>
       </div>
       <div class="input-box">
         Contraseña:
@@ -36,12 +44,12 @@
         <input type="password" id="input-repassword" required></input>
         <span></span>
       </div>
-      <div class="input-box">
+      <div class="input-box comment">
         Comentario:
         <input type="text" id="input-comment" required></input>
       </div>
       <div class="input-box">
-        <input type="checkbox" id="input-terminos" required></input>
+        <input type="checkbox" required></input>
         Términos y condiciones
       </div>
       <button type="submit">ENVIAR</button>
